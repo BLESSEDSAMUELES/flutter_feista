@@ -35,4 +35,12 @@ class Test extends StatelessWidget {
       ),
     );
   }
+
+  Widget title() {
+    return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(color: Colors.blueGrey),
+      child: Column(children: [Text("Hello!"), Text("World!!")]),
+    );
+  }
 }
