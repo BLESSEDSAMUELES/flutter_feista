@@ -18,11 +18,7 @@ class Test extends StatelessWidget {
         ),
         drawer: Drawer(child: Center(child: Text('hello World'))),
         body: Column(
-          children: [
-            Text("Hello!!"),
-            SizedBox(height: 100, width: 100),
-            Text("Hello!!"),
-          ],
+          children: [...List.generate(50, (int index) => Text('Hello'))],
         ),
       ),
     );
