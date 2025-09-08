@@ -18,7 +18,19 @@ class Test extends StatelessWidget {
         ),
         drawer: Drawer(child: Center(child: Text('hello World'))),
         body: ListView(
-          children: [...List.generate(50, (int index) => Text('Hello'))],
+          children: [
+            ...List.generate(
+              50,
+              (int index) => Padding(
+                padding: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text("Hello $index"),
+                  subtitle: Text("This is me "),
+                  tileColor: Colors.amber,
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
