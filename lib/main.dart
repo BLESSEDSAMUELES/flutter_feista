@@ -17,7 +17,7 @@ class Test extends StatelessWidget {
           ),
         ),
         drawer: Drawer(child: Center(child: Text('hello World'))),
-        body: Column(
+        body: ListView(
           children: [...List.generate(50, (int index) => Text('Hello'))],
         ),
       ),
